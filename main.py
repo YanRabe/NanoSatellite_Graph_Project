@@ -128,7 +128,7 @@ for e_id, (name, coord) in enumerate(ESSAIMS.items()):
         plt.ylabel("degré")
         plt.title(f"Distribution du degré par satellite ({name} - {portee / 1000}km)")
         #DÉCOMMENTER POUR ENREGISTRER LE GRAPHE
-        # plt.savefig(f"img/{name}_{portee / 1000}_deg_distsrib.png".replace(" ", "_"),
+        # plt.savefig(f"img/{name}_{portee / 1000}_deg_distrib.png".replace(" ", "_"),
                 # dpi=300,
                 # bbox_inches='tight') #sauvegarde le graphe en png
         plt.show()
@@ -282,7 +282,7 @@ for e_id, (name, coord) in enumerate(ESSAIMS.items()):
     plt.ylabel("degré")
     plt.title(f"Distribution du degré par satellite ({name} - {portee / 1000}km - Valué)")
     #DÉCOMMENTER POUR ENREGISTRER LE GRAPHE
-    # plt.savefig(f"img/{name}_{portee / 1000}_deg_distsrib_VALUED.png".replace(" ", "_"),
+    # plt.savefig(f"img/{name}_{portee / 1000}_deg_distrib_VALUED.png".replace(" ", "_"),
     #             dpi=300,
     #             bbox_inches='tight') #sauvegarde le graphe en png
     plt.show()
@@ -393,7 +393,7 @@ for e_id, (name, coord) in enumerate(ESSAIMS.items()):
         plt.ylabel("Fréquence")
         plt.title(f"Distribution des plus courts chemins (valués) ({name} - {portee / 1000}km)")
         #DÉCOMMENTER POUR ENREGISTRER LE GRAPHE
-        # plt.savefig(f"img/{name}_{portee / 1000}_shortest_distsrib_VALUED.png".replace(" ", "_"),
+        # plt.savefig(f"img/{name}_{portee / 1000}_shortest_distrib_VALUED.png".replace(" ", "_"),
         #         dpi=300,
         #         bbox_inches='tight') #sauvegarde le graphe en png
         plt.show()

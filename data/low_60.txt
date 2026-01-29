@@ -2,8 +2,6 @@
 Degré moyen : 29.42
 Moyernne du clustering : 0.6723798097803951
 Nombre de cliques (maximales) : 301
-Taille moyenne des cliques : 14.36
-Taille maximale d'une clique : 24
 Nombre de composantes connexes : 4
 Ordre des composantes connexes : [96, 2, 1, 1]
 Nombre de plus courts chemins: 4561

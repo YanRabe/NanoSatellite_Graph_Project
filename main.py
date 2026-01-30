@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import numpy as np
 
-#variables de config
+### variables de config
 ESSAIMS = {"densité faible": low,"densité moyenne":avg, "densité forte":high}
 # ESSAIMS = {"densité moyenne":avg, "densité forte":high}
 PORTEES = [20000, 40000, 60000] #portée des satellites
@@ -63,9 +63,9 @@ def _format_axes(ax):
     ax.set_zlabel("z")
 
 
-# print("Configuration 0: Densité faible.\n")
-# print("Configuration 1: Densité moyenne.\n")
-# print("Configuration 2: Densité élevée.\n")
+print("Configuration 0: Densité faible.\n")
+print("Configuration 1: Densité moyenne.\n")
+print("Configuration 2: Densité élevée.\n")
 
 
 # for id in ESSAIMS:
@@ -73,7 +73,7 @@ def _format_axes(ax):
 #     viz.plot(ESSAIMS[id][:, 0], ESSAIMS[id][:, 1], ESSAIMS[id][:, 2], 'ro')
 #     plt.title(f"Représentation de l'essaim de {id}")
 
-plt.show()
+# plt.show()
 
 # affichage des essaims avec les arêtes
 for e_id, (name, coord) in enumerate(ESSAIMS.items()):
@@ -115,8 +115,7 @@ for e_id, (name, coord) in enumerate(ESSAIMS.items()):
             deg_moyen += essaim.degree(i)
 
         deg_moyen = deg_moyen / essaim.number_of_nodes()
-        DEGREE_MOYEN = deg_moyen
-        print("Degré moyen :", DEGREE_MOYEN)
+        print("Degré moyen :", deg_moyen)
 
         # DISTRIB DU DEG
         essaim_degree = np.zeros((1))
@@ -136,7 +135,6 @@ for e_id, (name, coord) in enumerate(ESSAIMS.items()):
 
         # CLUSTERING MOYEN
         clustering_moyen = nx.average_clustering(essaim)
-        CLUSTERING_MOYEN = clustering_moyen
         print("Moyernne du clustering :", clustering_moyen)
 
 
@@ -269,8 +267,7 @@ for e_id, (name, coord) in enumerate(ESSAIMS.items()):
         deg_moyen += essaim.degree(i)
 
     deg_moyen = deg_moyen / essaim.number_of_nodes()
-    DEGREE_MOYEN = deg_moyen
-    print("Degré moyen :", DEGREE_MOYEN)
+    print("Degré moyen :", deg_moyen)
 
     # DISTRIB DU DEG
     essaim_degree = np.zeros((1))
@@ -290,7 +287,6 @@ for e_id, (name, coord) in enumerate(ESSAIMS.items()):
 
     # CLUSTERING MOYEN
     clustering_moyen = nx.average_clustering(essaim)
-    CLUSTERING_MOYEN = clustering_moyen
     print("Clustering moyen :", clustering_moyen)
 
 

@@ -6,7 +6,7 @@ This project models and analyzes a swarm of nanosatellites deployed in orbit aro
 
 The modeling and quantitative analysis are implemented in **Python** using **NumPy** and **NetworkX**.
 
-## 📊 Features & Analysis
+## Features & Analysis
 
 The project constructs 3D spatial graphs where nodes represent nanosatellites and edges represent direct communication links (created if the distance between two satellites is within the given communication range).
 
@@ -23,7 +23,7 @@ The analysis computes several key metrics for both **unweighted** and **weighted
 *   **Connected Components:** Drastically decrease with higher ranges due to the merging of isolated sub-groups.
 *   **Weighted Graphs:** Introducing continuous weight ($d^2$) provides a more Gaussian distribution of low-cost paths compared to the unweighted setup.
 
-## 📂 Project Structure
+## Project Structure
 
 *   `main.py`: The main entry point to generate the graphs and run the analyses.
 *   `csv_handler.py`: Utility module for reading/writing topology and graph metric data.
@@ -31,7 +31,7 @@ The analysis computes several key metrics for both **unweighted** and **weighted
 *   `img/`: Contains the generated 3D network visualizations and distribution histograms.
 *   `topologies/`: Contains the base spatial coordinates for the nanosatellites (`topology_avg.csv`, `topology_high.csv`, `topology_low.csv`).
 
-## 🚀 How to Use
+## How to Use
 
 ### Prerequisites
 

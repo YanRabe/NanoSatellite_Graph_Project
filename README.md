@@ -10,7 +10,7 @@ The modeling and quantitative analysis are implemented in **Python** using **Num
 
 The project constructs 3D spatial graphs where nodes represent nanosatellites and edges represent direct communication links (created if the distance between two satellites is within the given communication range).
 
-The analysis computes several key metrics for both **unweighted** and **weighted** (where cost is the squared distance, $d^2$) graphs:
+The analysis computes several key metrics for both **unweighted** and **weighted** (where cost is the squared distance, $d^2$) graphs :
 *   **Average Degree**
 *   **Average Clustering Coefficient**
 *   **Maximum Cliques**
